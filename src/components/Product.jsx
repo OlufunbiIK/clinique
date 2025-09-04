@@ -67,7 +67,7 @@ export default function Product() {
             </div>
 
             {/* Product Image Area */}
-            <div className="bg-white p-8 h-64 flex items-center justify-center relative overflow-hidden">
+            <div className="bg-white p-8 h-64  mx-2 my-2 rounded-lg flex items-center justify-center relative overflow-hidden">
               {/* Placeholder for actual product images */}
               <img
                 src={product.image}

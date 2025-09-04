@@ -7,10 +7,10 @@ export default function CliniqueLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <section id="hero-section">
-      <div className="bg-[#d7dbde]">
+      <div className="">
         {/* Navigation */}
         <nav className="relative z-10 bg-white shadow-sm font-crimson text-[16px]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-2">
+          <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-12">
             <div className="flex justify-between items-center h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
@@ -143,7 +143,7 @@ export default function CliniqueLanding() {
             className="w-full h-full object-cover"
           />
         </div> */}
-        <div className="w-full h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 flex items-center justify-center overflow-hidden px-2 py-2 lg:px-10 lg:py-10 rounded-lg">
+        <div className="w-full h-screen flex items-center justify-center overflow-hidden px-2 lg:px-10 rounded-lg">
           <img
             src={lady}
             alt="Background"

@@ -9,13 +9,26 @@ export default function Footer() {
   return (
     <footer className="font-crimson">
       <div>
-        <div>
-          <div>
-            <div>
-              <div className="flex justify-center py-6">
-                <img src={clinique} alt="Clinique" className="h-12" />
+        <div className="max-w-8xl">
+          <div className="flex items-center justify-between space-x-4 py-6 p-2 md:px-4 lg:px-8">
+            <div className="flex flex-row gap-10">
+              <div>
+                <img src={facebook} alt="Facebook" className="h-6 w-6 mx-2" />
               </div>
-              <div></div>
+              <div>
+                <img src={instagram} alt="Facebook" className="h-6 w-6 mx-2" />
+              </div>
+            </div>
+            <div className="flex justify-center py-6">
+              <img src={clinique} alt="Clinique" className="h-12" />
+            </div>
+            <div className="flex flex-row gap-10">
+              <div>
+                <img src={twitter} alt="Facebook" className="h-6 w-6 mx-2" />
+              </div>
+              <div>
+                <img src={linkedin} alt="Facebook" className="h-6 w-6 mx-2" />
+              </div>
             </div>
           </div>
           <div className="bg-[#DCE0E3] h-[1px] w-full"></div>

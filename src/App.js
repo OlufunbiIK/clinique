@@ -4,6 +4,8 @@ import CliniqueLanding from "./components/HeroSection";
 import CosmeticsLandingSection from "./components/AboutProduct";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import NewsLetter from "./components/NewsLetter";
+import Mission from "./components/Mission";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <CliniqueLanding />
       <CosmeticsLandingSection />
       <Services />
+      <Mission />
+      <NewsLetter />
       <Footer />
     </div>
   );
