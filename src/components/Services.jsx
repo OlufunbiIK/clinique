@@ -15,7 +15,15 @@ export default function Services() {
 
         {/* Overlay Image */}
         <div className="absolute inset-0 flex items-center justify-center z-10 md:top-32 md:left-18 lg:top-52 lg:left-28">
-          <div></div>
+          <div className="absolute top-4 left-1/2 transform -translate-x-28 translate-x-1 -translate-y-36 sm:-translate-x-28 md:-translate-x-24 md:-translate-y-48 lg:-translate-x-20 lg:translate-y-24 z-20 flex flex-row gap-2">
+            <div className="rounded-full px-3 py-1 bg-gradient-to-r from-white to-black text-xs text-white">
+              Comfort
+            </div>
+
+            <div className="rounded-full px-3 py-1 bg-gradient-to-r from-white to-pink-400  text-xs text-white">
+              Quality
+            </div>
+          </div>
           <img
             src={green}
             alt="Overlay"
