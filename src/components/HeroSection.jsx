@@ -1,52 +1,10 @@
-// import React, { useState } from "react";
-// import NavBar from "./NavBar";
-// import lady from "../assets/images/4f87c3b61c70b9745295cb6c76dbce97439d7313.png";
-// import minilady from "../assets/images/Frame21@3x.png";
-// import minitext from "../assets/images/Frame23.png";
-
-// export default function CliniqueLanding() {
-//   return (
-//     <section id="hero-section" className="relative">
-//       <div className="relative">
-//         <NavBar />
-//         <div className="relative w-full h-screen flex items-center justify-center overflow-hidden px-2 lg:px-10 rounded-lg">
-//           {/* Using a placeholder div since we can't import the actual image */}
-//           <div
-//             className="w-full h-full bg-gradient-to-br rounded-xl from-pink-200 via-purple-200 to-blue-200 flex items-center justify-center"
-//             style={{ objectPosition: "50% 30%" }}
-//           >
-//             <img
-//               src={lady}
-//               alt="Lady"
-//               className="w-full h-full object-cover object-center rounded-xl"
-//             />
-//           </div>
-//         </div>
-
-//         {/* Responsive text overlay */}
-//         <div className="absolute top-16 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
-//           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal text-gray-700">
-//             Level up your glam game
-//             <br />
-//             <span className="text-black font-bold">with confidence</span>
-//           </h3>
-//         </div>
-//         <div>
-//           <img src={minilady} alt="" className="w-60" />
-//         </div>
-//         <div>
-//           <img src={minitext} alt="" className="w-60" />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import lady from "../assets/images/4f87c3b61c70b9745295cb6c76dbce97439d7313.png";
 import minitext from "../assets/images/Frame21@3x.png";
 import minilady from "../assets/images/Frame23.png";
+import CTA from "./CTA";
+import products from "../assets/images/Frame26.svg";
 
 export default function CliniqueLanding() {
   return (
@@ -97,6 +55,25 @@ export default function CliniqueLanding() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="absolute">
+          <div className="flex flex-row gap-5 py-2 px-2 rounded-lg">
+            <h3 className="bg-[#F4EFF51A]">Authentice</h3>
+            <h3 className="bg-[#F4EFF51A]">Comfort</h3>
+            <h3 className="bg-[#F4EFF51A]">Quality</h3>
+          </div>
+        </div>
+        <div className="absolute px-2 py-2 bottom-56 md:bottom-20 right-4 lg:bottom-10 lg:right-20 bg-white bg-opacity-70 backdrop-blur-sm rounded-lg flex flex-col items-center justify-center gap-4">
+          <h2>(size -15%)</h2>
+          <h2>
+            Clinque Replenish
+            <br /> Hydrator
+          </h2>
+          <CTA />
+          <div>
+            <img src={products} alt="products" />
           </div>
         </div>
       </div>
