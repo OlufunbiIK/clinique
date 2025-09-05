@@ -25,7 +25,7 @@ const CosmeticsLandingSection = () => {
                   feels valued, beautiful, and empowered to embrace their own
                   definition of glamour.
                 </p>
-                <button className="inline-flex items-center px-8 py-3 text-pink-500 border-2 border-pink-300 rounded-full hover:bg-pink-50 hover:border-pink-400 transition-all duration-300 font-medium">
+                <button className="inline-flex items-center px-8 py-3 text-pink-500 border-2 border-pink-300 rounded-md hover:bg-pink-50 hover:border-pink-400 transition-all duration-300 font-medium">
                   Learn More
                 </button>
               </div>
