@@ -3,7 +3,7 @@ import Product from "./Product";
 
 const CosmeticsLandingSection = () => {
   return (
-    <section>
+    <section id="about">
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 py-16 px-6 font-crimson">
         <div className="max-w-7xl mx-auto">
           {/* Brand Mission Section */}

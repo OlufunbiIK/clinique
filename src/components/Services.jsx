@@ -4,7 +4,7 @@ import green from "../assets/images/image_7-removebg-preview 1.svg";
 export default function Services() {
   return (
     <section id="services">
-      <div className="px-12">
+      <div className="px-12 ">
         <h3 className="text-left font-crimson text-[32px]">Products</h3>
       </div>
       <div className="relative top-0 flex flex-col items-center justify-center">
@@ -15,6 +15,7 @@ export default function Services() {
 
         {/* Overlay Image */}
         <div className="absolute inset-0 flex items-center justify-center z-10 md:top-32 md:left-18 lg:top-52 lg:left-28">
+          <div></div>
           <img
             src={green}
             alt="Overlay"

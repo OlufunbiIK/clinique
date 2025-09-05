@@ -24,13 +24,13 @@ export default function CliniqueLanding() {
                 <div className="hidden lg:block">
                   <div className="ml-10 flex items-baseline space-x-2 bg-[#DCE0E34A] rounded-[20px] p-[5px]">
                     <a
-                      href="#"
+                      href="hero-section"
                       className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                     >
                       Home
                     </a>
                     <a
-                      href="#"
+                      href=""
                       className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                     >
                       About

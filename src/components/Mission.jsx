@@ -31,18 +31,18 @@ export default function Mission() {
           <img
             src={mission1}
             alt="Mission 1"
-            className="absolute w-[220px] sm:w-[280px] md:w-[280px] lg:w-[400px] h-[300px] sm:h-[380px] md:h-[420px] lg:h-[450px] object-cover rounded-lg shadow-lg z-10 transform translate-x-2 sm:translate-x-3 md:translate-x-4 lg:translate-x-5"
+            className="absolute w-[260px] sm:w-[280px] md:w-[280px] lg:w-[400px] h-[300px] sm:h-[380px] md:h-[420px] lg:h-[450px] object-cover rounded-lg shadow-lg z-10 transform translate-x-2 sm:translate-x-3 md:translate-x-4 lg:translate-x-5"
           />
 
           {/* Three comfort labels on image 1 - Flex row at upper part */}
-          <div className="absolute top-4 left-1/2 transform -translate-x-1/2 translate-x-1 sm:translate-x-2 md:translate-x-2 lg:translate-x-3 z-20 flex flex-row gap-2">
-            <div className="rounded-full px-3 py-1 bg-[#F4EFF51A] text-xs text-gray-700">
+          <div className="absolute top-4 left-1/2 transform -translate-x-28 translate-x-1 -translate-y-36 sm:-translate-x-28 md:-translate-x-24 md:-translate-y-48 lg:-translate-x-20 lg:translate-y-24 z-20 flex flex-row gap-2">
+            <div className="rounded-full px-3 py-1 bg-[#fc97a8] text-xs text-white">
               Comfort
             </div>
-            <div className="rounded-full px-3 py-1 bg-[#F4EFF51A] text-xs text-gray-700">
+            <div className="rounded-full px-3 py-1 bg-[#af6f73] text-xs text-white">
               Comfort
             </div>
-            <div className="rounded-full px-3 py-1 bg-[#F4EFF51A] text-xs text-gray-700">
+            <div className="rounded-full px-3 py-1 bg-[#fc9eae] text-xs text-white">
               Comfort
             </div>
           </div>
@@ -55,8 +55,8 @@ export default function Mission() {
           />
 
           {/* One comfort label on image 2 - Lower part of image */}
-          <div className="absolute z-30 transform -translate-x-16 sm:-translate-x-24 md:-translate-x-28 lg:-translate-x-48 translate-y-32 sm:translate-y-40 md:translate-y-44 lg:translate-y-60 left-1/2 -translate-x-1/2">
-            <div className="rounded-full px-3 py-1 bg-[#F4EFF51A] text-xs text-gray-700">
+          <div className="absolute z-30 transform -translate-x-24 sm:-translate-x-24 md:-translate-x-36 lg:-translate-x-56 translate-y-32 sm:translate-y-40 md:translate-y-48 lg:translate-y-72 left-1/2 -translate-x-1/2">
+            <div className="rounded-full px-3 py-1 bg-[#bababa] text-xs text-white">
               Comfort
             </div>
           </div>
