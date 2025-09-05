@@ -1,155 +1,103 @@
+// import React, { useState } from "react";
+// import NavBar from "./NavBar";
+// import lady from "../assets/images/4f87c3b61c70b9745295cb6c76dbce97439d7313.png";
+// import minilady from "../assets/images/Frame21@3x.png";
+// import minitext from "../assets/images/Frame23.png";
+
+// export default function CliniqueLanding() {
+//   return (
+//     <section id="hero-section" className="relative">
+//       <div className="relative">
+//         <NavBar />
+//         <div className="relative w-full h-screen flex items-center justify-center overflow-hidden px-2 lg:px-10 rounded-lg">
+//           {/* Using a placeholder div since we can't import the actual image */}
+//           <div
+//             className="w-full h-full bg-gradient-to-br rounded-xl from-pink-200 via-purple-200 to-blue-200 flex items-center justify-center"
+//             style={{ objectPosition: "50% 30%" }}
+//           >
+//             <img
+//               src={lady}
+//               alt="Lady"
+//               className="w-full h-full object-cover object-center rounded-xl"
+//             />
+//           </div>
+//         </div>
+
+//         {/* Responsive text overlay */}
+//         <div className="absolute top-16 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
+//           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal text-gray-700">
+//             Level up your glam game
+//             <br />
+//             <span className="text-black font-bold">with confidence</span>
+//           </h3>
+//         </div>
+//         <div>
+//           <img src={minilady} alt="" className="w-60" />
+//         </div>
+//         <div>
+//           <img src={minitext} alt="" className="w-60" />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
 import React, { useState } from "react";
-import { Menu, X, ShoppingBag } from "lucide-react";
-import backgroundImage from "../assets/images/Frame 1.png";
+import NavBar from "./NavBar";
 import lady from "../assets/images/4f87c3b61c70b9745295cb6c76dbce97439d7313.png";
+import minitext from "../assets/images/Frame21@3x.png";
+import minilady from "../assets/images/Frame23.png";
 
 export default function CliniqueLanding() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <section id="hero-section">
-      <div className="">
-        {/* Navigation */}
-        <nav className="relative z-10 bg-white shadow-sm font-crimson text-[16px]">
-          <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 xl:px-12">
-            <div className="flex justify-between items-center h-16">
-              {/* Logo */}
-              <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-[#D8535E] tracking-wide">
-                  CLINIQUE
-                </h1>
-              </div>
+    <section id="hero-section" className="relative font-crimson">
+      <div className="relative">
+        <NavBar />
+        <div className="relative w-full h-screen flex items-center justify-center overflow-hidden px-2 lg:px-10 rounded-lg">
+          {/* Using a placeholder div since we can't import the actual image */}
+          <div
+            className="w-full h-full bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 flex items-center justify-center"
+            style={{ objectPosition: "50% 30%" }}
+          >
+            <img
+              src={lady}
+              alt="Lady"
+              className="w-full h-full object-cover object-center rounded-xl"
+            />
+          </div>
+        </div>
 
-              <div className="flex items-center space-x-24">
-                {/* Desktop Navigation */}
-                <div className="hidden lg:block">
-                  <div className="ml-10 flex items-baseline space-x-2 bg-[#DCE0E34A] rounded-[20px] p-[5px]">
-                    <a
-                      href="hero-section"
-                      className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                    >
-                      Home
-                    </a>
-                    <a
-                      href=""
-                      className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                    >
-                      About
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                    >
-                      Products
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                    >
-                      Services
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                    >
-                      Reviews
-                    </a>
-                  </div>
-                </div>
+        {/* Responsive text overlay */}
+        <div className="absolute top-20 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal text-gray-700">
+            Level up your glam game
+            <br />
+            <span className="text-black font-bold">with confidence</span>
+          </h3>
+        </div>
 
-                {/* Shop Now Button */}
-                <div className="hidden lg:block">
-                  <button className="inline-flex items-center px-6 py-2 border border-rose-300 text-rose-400 bg-white hover:bg-rose-50 font-medium rounded-md transition-colors">
-                    Shop now
-                  </button>
-                </div>
-              </div>
+        <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-10 left-4 sm:left-8 md:left-10 lg:left-20 z-10">
+          {/* minilady - bottom layer */}
+          <div className="relative">
+            <div className="w-[280px] sm:w-[280px] md:w-[300px] lg:w-[400px] h-44 sm:h-36 md:h-40 lg:h-44 rounded-lg flex items-center justify-center">
+              <img
+                src={minilady}
+                alt="minilady"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
 
-              {/* Mobile menu button */}
-              <div className="lg:hidden">
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-400"
-                >
-                  {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+            {/* minitext - positioned on the right side of minilady */}
+            <div className="absolute top-16 right-12 sm:top-16 sm:right-12 md:top-12 md:right-12 lg:top-14 lg:left-32 lg:right-30 z-20">
+              <div className="w-40 sm:w-40 md:w-40 lg:w-60 h-12 sm:h-14 md:h-16 lg:h-18 rounded-lg flex items-center justify-center">
+                <img
+                  src={minitext}
+                  alt="minitext"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
             </div>
           </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className="lg:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium"
-                >
-                  Products
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium"
-                >
-                  Services
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium"
-                >
-                  Reviews
-                </a>
-                <div className="px-3 py-2">
-                  <button className="w-full inline-flex justify-center items-center px-6 py-2 border border-rose-300 text-rose-400 bg-white hover:bg-rose-50 font-medium rounded-md transition-colors">
-                    Shop now
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-        </nav>
-
-        {/* Hero Section */}
-        {/* <div className="w-full h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 relative">
-          <img
-            src={lady}
-            alt="Background"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div> */}
-        {/* <div className="w-full h-screen flex items-center justify-center overflow-hidden">
-          <img
-            src={lady}
-            alt="Background"
-            className="min-w-full min-h-full object-cover"
-          />
-        </div> */}
-
-        {/* <div className="w-full h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 flex items-center justify-center">
-          <img
-            src={lady}
-            alt="Background"
-            className="w-full h-full object-cover"
-          />
-        </div> */}
-        <div className="w-full h-screen flex items-center justify-center overflow-hidden px-2 lg:px-10 rounded-lg">
-          <img
-            src={lady}
-            alt="Background"
-            className="w-full h-full object-cover object-center"
-            style={{ objectPosition: "50% 30%" }}
-          />
         </div>
       </div>
     </section>

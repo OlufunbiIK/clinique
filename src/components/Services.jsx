@@ -3,9 +3,9 @@ import green from "../assets/images/image_7-removebg-preview 1.svg";
 
 export default function Services() {
   return (
-    <section id="services">
+    <section id="product">
       <div className="px-12 ">
-        <h3 className="text-left font-crimson text-[32px]">Products</h3>
+        <h3 className="text-left font-crimson text-[32px] sticky">Products</h3>
       </div>
       <div className="relative top-0 flex flex-col items-center justify-center">
         {/* Background Text */}

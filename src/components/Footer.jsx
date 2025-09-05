@@ -37,19 +37,19 @@ export default function Footer() {
             <div className="lg:block  w-full mx-4 my-4">
               <div className="ml-10 space-x-2 rounded-lg p-[5px] flex flex-col md:flex-row justify-center items-center gap-2 lg:gap-10 text-[16px]">
                 <a
-                  href="#"
+                  href="#hero-section"
                   className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="product"
                   className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   Products
@@ -61,7 +61,7 @@ export default function Footer() {
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="#reviews"
                   className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   Reviews
