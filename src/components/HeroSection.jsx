@@ -25,27 +25,18 @@ export default function CliniqueLanding() {
           </div>
         </div>
 
-        {/* Responsive text overlay */}
-        {/* <div className="absolute text-white md:text-black w-full top-20 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
-          <h3 className="text-[36px] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal">
-            Level up your glam game
-            <br />
-            <span className="font-bold">with confidence</span>
-          </h3>
-        </div> */}
-
         <div
           className="absolute 
-  text-white lg:text-black 
-  w-full 
-  top-1/4 lg:top-28 
-  left-1/3 lg:left-20 
-  transform -translate-x-20 -translate-y-20 lg:translate-y-5 lg:translate-x-5
-  text-center lg:text-left 
-  max-w-xs sm:max-w-sm lg:max-w-lg xl:max-w-xl 
-  z-10"
+    text-white lg:text-black 
+    w-full 
+    top-1/4 lg:top-28 
+    left-1/3 lg:left-14 
+    transform -translate-x-20 -translate-y-20 lg:translate-y-5 lg:translate-x-0
+    text-center lg:text-left 
+    max-w-xs sm:max-w-sm lg:max-w-lg xl:max-w-xl 
+    z-10"
         >
-          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight sm:leading-snug md:leading-normal">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl 2xl:text-4xl leading-tight sm:leading-snug md:leading-normal">
             Level up your glam game
             <br />
             <span className="font-bold">with confidence</span>
@@ -98,15 +89,15 @@ export default function CliniqueLanding() {
           </div>
         </div>
 
-        <div className="absolute px-2 py-2 bottom-56 md:bottom-20 right-4 lg:bottom-5 lg:right-14 flex flex-col items-center justify-center gap-4">
+        <div className="absolute px-2 py-2 top-48 right-20 md:top-96 md:right-20 lg:bottom-96 lg:right-32 xl:bottom-32 xl:right-32 flex flex-col items-center justify-center gap-4">
           <div className="flex flex-row gap-5 py-2 px-2 rounded-lg">
-            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+            <h3 className="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg px-1 py-1">
               Authentice
             </h3>
-            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+            <h3 className="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg px-1 py-1">
               Comfort
             </h3>
-            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+            <h3 className="bg-white bg-opacity-30 backdrop-blur-sm rounded-lg px-1 py-1">
               Quality
             </h3>
           </div>
