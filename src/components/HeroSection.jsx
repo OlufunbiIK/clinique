@@ -26,54 +26,89 @@ export default function CliniqueLanding() {
         </div>
 
         {/* Responsive text overlay */}
-        <div className="absolute top-20 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal text-gray-700">
+        {/* <div className="absolute text-white md:text-black w-full top-20 sm:top-20 md:top-24 lg:top-28 left-4 sm:left-14 md:left-10 lg:left-20 text-left max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
+          <h3 className="text-[36px] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-tight sm:leading-snug md:leading-normal">
             Level up your glam game
             <br />
-            <span className="text-black font-bold">with confidence</span>
+            <span className="font-bold">with confidence</span>
+          </h3>
+        </div> */}
+
+        <div
+          className="absolute 
+  text-white lg:text-black 
+  w-full 
+  top-1/4 lg:top-28 
+  left-1/3 lg:left-20 
+  transform -translate-x-20 -translate-y-20 lg:translate-y-5 lg:translate-x-5
+  text-center lg:text-left 
+  max-w-xs sm:max-w-sm lg:max-w-lg xl:max-w-xl 
+  z-10"
+        >
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight sm:leading-snug md:leading-normal">
+            Level up your glam game
+            <br />
+            <span className="font-bold">with confidence</span>
           </h3>
         </div>
 
-        <div className="absolute bottom-16 sm:bottom-20 md:bottom-24 lg:bottom-10 left-4 sm:left-8 md:left-10 lg:left-20 z-10">
-          {/* minilady - bottom layer */}
-          <div className="relative">
-            <div className="w-[280px] sm:w-[280px] md:w-[300px] lg:w-[400px] h-44 sm:h-36 md:h-40 lg:h-44 rounded-lg flex items-center justify-center">
-              <img
-                src={minilady}
-                alt="minilady"
-                className="w-full h-full object-contain rounded-lg"
-              />
-            </div>
-
-            {/* minitext - positioned on the right side of minilady */}
-            <div className="absolute top-16 right-12 sm:top-16 sm:right-12 md:top-12 md:right-12 lg:top-14 lg:left-32 lg:right-30 z-20">
-              <div className="w-40 sm:w-40 md:w-40 lg:w-60 h-12 sm:h-14 md:h-16 lg:h-18 rounded-lg flex items-center justify-center">
+        <div className="flex flex-col-reverse md:flex-row justify-between w-full md:w-auto">
+          <div className="absolute bottom-16 sm:bottom-20 md:bottom-0 lg:-bottom-3 left-4 sm:left-8 md:left-10 lg:left-20 z-10">
+            {/* minilady - bottom layer */}
+            <div className="relative">
+              <div className="w-[280px] sm:w-[280px] md:w-[300px] lg:w-[400px] h-44 sm:h-36 md:h-40 lg:h-44 rounded-lg flex items-center justify-center">
                 <img
-                  src={minitext}
-                  alt="minitext"
-                  className="w-full h-full object-cover rounded-lg"
+                  src={minilady}
+                  alt="minilady"
+                  className="w-full h-full object-contain rounded-lg"
                 />
+              </div>
+
+              {/* minitext - positioned on the right side of minilady */}
+              <div className="absolute top-16 right-12 sm:top-16 sm:right-12 md:top-12 md:right-12 lg:top-14 lg:left-32 lg:right-30 z-20">
+                <div className="w-40 sm:w-40 md:w-44 lg:w-64 h-12 sm:h-14 md:h-16 lg:h-18 rounded-lg flex items-center justify-center">
+                  <img
+                    src={minitext}
+                    alt="minitext"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute px-2 py-2 bottom-56 md:bottom-10 right-4 lg:bottom-5 lg:right-14 bg-white bg-opacity-30 backdrop-blur-sm rounded-lg flex flex-col items-center justify-center gap-4">
+            <div>
+              <h2 className="text-left w-full text-white text-[16px]">
+                (size -15%)
+              </h2>
+              <div className="flex flex-row justify-between text-left">
+                <h2 className="text-white text-[32px]">
+                  Clinque Replenish
+                  <br /> Hydrator
+                </h2>
+                <div className="mt-2">
+                  <CTA />
+                </div>
+              </div>
+              <div>
+                <img src={products} alt="products" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="absolute">
+        <div className="absolute px-2 py-2 bottom-56 md:bottom-20 right-4 lg:bottom-5 lg:right-14 flex flex-col items-center justify-center gap-4">
           <div className="flex flex-row gap-5 py-2 px-2 rounded-lg">
-            <h3 className="bg-[#F4EFF51A]">Authentice</h3>
-            <h3 className="bg-[#F4EFF51A]">Comfort</h3>
-            <h3 className="bg-[#F4EFF51A]">Quality</h3>
-          </div>
-        </div>
-        <div className="absolute px-2 py-2 bottom-56 md:bottom-20 right-4 lg:bottom-10 lg:right-20 bg-white bg-opacity-70 backdrop-blur-sm rounded-lg flex flex-col items-center justify-center gap-4">
-          <h2>(size -15%)</h2>
-          <h2>
-            Clinque Replenish
-            <br /> Hydrator
-          </h2>
-          <CTA />
-          <div>
-            <img src={products} alt="products" />
+            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+              Authentice
+            </h3>
+            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+              Comfort
+            </h3>
+            <h3 className="bg-[#F4EFF51A] bg-white bg-opacity-30 backdrop-blur-sm rounded-lg">
+              Quality
+            </h3>
           </div>
         </div>
       </div>
